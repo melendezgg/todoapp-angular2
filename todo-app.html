@@ -1,0 +1,6 @@
+<ul>
+	<li *ng-for="#todo of todos">{{todo}}</li>
+</ul>
+
+<input #todo (keyup)="keyup($event)">
+<button (click)="addTodo(todo.value)">Add Todo</button>
